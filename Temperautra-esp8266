@@ -47,7 +47,7 @@ void showResponse(int waitTime){
 //========================================================================
 boolean thingSpeakWrite(float value1){
   String cmd = "AT+CIPSTART=\"TCP\",\"";                  // Conexão TCP
-  cmd += "184.106.153.149";                               // api.thingspeak.com
+  cmd += "184.106.153.149";                                   // api.thingspeak.com
   cmd += "\",80";
   espSerial.println(cmd);
   if (DEBUG) Serial.println(cmd);
@@ -142,7 +142,6 @@ void loop() {
  //------------------- Chama a função Thing ------------------- // 
       thingSpeakWrite(t);
   
- 
   }
 
 
